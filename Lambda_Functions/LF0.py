@@ -4,7 +4,7 @@ import boto3
 def lambda_handler(event, context):
 
     client = boto3.client('lex-runtime')
-
+    
     response = client.post_text(
         botName='DiningConciergeBot',
         botAlias='dcbot',
@@ -18,5 +18,10 @@ def lambda_handler(event, context):
     print("Message from bot:" +response["message"])
     return {
         'statusCode': 200,
-        'body': json.dumps(response["message"])
+        'messages': [{
+                "type": "unstructured",
+                "unstructured": {
+                    "text": response["message"]
+                                }
+                      }]
     }
