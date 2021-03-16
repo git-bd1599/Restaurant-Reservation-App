@@ -7,12 +7,12 @@ import random
 
 region = 'us-west-2' # e.g. us-east-1
 service = 'es'
-YOUR_ACCESS_KEY = "AKIAZWSA32HVFRCEY5F4"
-YOUR_SECRET_KEY = "qHv7QDK1GrZHiLKjs0PES3ywxGbeOO2Fmcv+bdu2"
+YOUR_ACCESS_KEY = ""
+YOUR_SECRET_KEY = ""
 #credentials = boto3.Session().get_credentials()
 awsauth = AWS4Auth(YOUR_ACCESS_KEY, YOUR_SECRET_KEY, region, service)
 
-host = 'https://search-dining-khftlafgbdxmbum7ukajfhcjmq.us-west-2.es.amazonaws.com' # the Amazon ES domain, with https://
+host = '' # the Amazon ES domain, with https://
 index = 'dining-index'
 cuisine = 'Indian'
 url = host + '/' + index + '/_search?q='+str(cuisine)
