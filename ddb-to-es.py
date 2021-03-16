@@ -9,7 +9,7 @@ YOUR_SECRET_KEY = ""
 credentials = boto3.Session().get_credentials()
 awsauth = AWS4Auth(YOUR_ACCESS_KEY, YOUR_SECRET_KEY, region, service)
 
-host = 'https://search-dining-khftlafgbdxmbum7ukajfhcjmq.us-west-2.es.amazonaws.com' # the Amazon ES domain, with https://
+host = '' # the Amazon ES domain, with https://
 index = 'dining-index'
 type = 'lambda-type'
 url = host + '/' + index + '/' + type + '/'
