@@ -6,8 +6,8 @@ from requests_aws4auth import AWS4Auth
 import random
 
 def lambda_handler(event, context):
-    YOUR_ACCESS_KEY = "AKIAZWSA32HVFRCEY5F4"
-    YOUR_SECRET_KEY = "qHv7QDK1GrZHiLKjs0PES3ywxGbeOO2Fmcv+bdu2"
+    YOUR_ACCESS_KEY = ""
+    YOUR_SECRET_KEY = ""
     region = "us-west-2"
     service = 'es'
 
