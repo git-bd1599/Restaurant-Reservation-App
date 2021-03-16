@@ -5,15 +5,15 @@ from time import strptime
 import boto3
 from decimal import Decimal
 
-api_key = '1r3sM0guSg71-4KcUg_zKbz-MYpLfW-jsuPBT1ZUKyyjOjFVkffO5QJJMXLxAAqiK8rYN6kZte26ZQmB9roAjtjJKBDpUopsIVK_P3IYos1kSCnYOitFkD3x_pYuYHYx'
+api_key = ''
 headers = {'Authorization' : 'Bearer %s' %api_key}
 
 
 #dataFile = open('yelp.json', 'w')
 yelp_dict = {}
 
-YOUR_ACCESS_KEY = "AKIAZWSA32HVFRCEY5F4"
-YOUR_SECRET_KEY = "qHv7QDK1GrZHiLKjs0PES3ywxGbeOO2Fmcv+bdu2"
+YOUR_ACCESS_KEY = ""
+YOUR_SECRET_KEY = ""
 region = "us-west-2"
 
 def put_data(restaurants, dynamodb=None):
