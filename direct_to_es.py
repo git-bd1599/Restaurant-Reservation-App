@@ -5,15 +5,15 @@ from requests_aws4auth import AWS4Auth
 
 region = 'us-west-2' # e.g. us-east-1
 service = 'es'
-YOUR_ACCESS_KEY = "AKIAZWSA32HVFRCEY5F4"
-YOUR_SECRET_KEY = "qHv7QDK1GrZHiLKjs0PES3ywxGbeOO2Fmcv+bdu2"
+YOUR_ACCESS_KEY = ""
+YOUR_SECRET_KEY = ""
 #credentials = boto3.Session().get_credentials()
 awsauth = AWS4Auth(YOUR_ACCESS_KEY, YOUR_SECRET_KEY, region, service)
 
-api_key = '1r3sM0guSg71-4KcUg_zKbz-MYpLfW-jsuPBT1ZUKyyjOjFVkffO5QJJMXLxAAqiK8rYN6kZte26ZQmB9roAjtjJKBDpUopsIVK_P3IYos1kSCnYOitFkD3x_pYuYHYx'
+api_key = ''
 headers_yelp = {'Authorization' : 'Bearer %s' %api_key}
 
-host = 'https://search-dining-khftlafgbdxmbum7ukajfhcjmq.us-west-2.es.amazonaws.com' # the Amazon ES domain, with https://
+host = '' # the Amazon ES domain, with https://
 index = 'dining-index'
 type = 'lambda-type'
 url_es = host + '/' + index + '/' + type + '/'
