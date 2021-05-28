@@ -52,6 +52,9 @@ We followed the following steps
     - Set up a CloudWatch event trigger that runs every minute and invokes the Lambda function as a result, this automates the queue worker Lambda to poll and process suggestion       requests on its own.
   
 **In summary**, based on a conversation with the customer, the LEX chatbot will identify the customer’s preferred ‘cuisine’. The backend will search through ElasticSearch to get random suggestions of restaurant IDs with this cuisine. At this point, the system would also query the DynamoDB table with these restaurant IDs to find more information about the restaurants to suggest to the customers like name and address of the restaurant. 
+
+
+![ChatExample](https://user-images.githubusercontent.com/61260957/120046455-ccd02900-bfd7-11eb-95ac-21a51254bb1b.PNG)
     
 
 
