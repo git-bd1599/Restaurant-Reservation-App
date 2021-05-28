@@ -14,5 +14,5 @@ We followed the following steps
     - The API takes input from the frontend and delivers to the backend along with providing response to the frontend once the processing in the backend is done
     - Lambda function (LF0) is created to perform chat functions
 3. Built the dining concierge chatbot using Amazon Lex
-    -Lambda function (LF1) is created and used as a code hook for Lex, which essentially entails the invocation of the Lambda before Lex responds to any of the requests -- this gives us chance to manipulate and validate parameters as well as format the bot’s responses.
+    - Lambda function (LF1) is created and used as a code hook for Lex, which essentially entails the invocation of the Lambda before Lex responds to any of the requests -- this         gives us chance to manipulate and validate parameters as well as format the bot’s responses.
 
