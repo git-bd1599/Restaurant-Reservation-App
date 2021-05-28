@@ -7,3 +7,6 @@ application. Specifically, we will build a Dining Concierge chatbot that sends t
 restaurant suggestions given a set of preferences that the user provides the chatbot with,
 through conversation.
 
+#### Outline
+We followed the following steps
+
